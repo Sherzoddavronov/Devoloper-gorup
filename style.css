@@ -1,0 +1,25 @@
+footer{
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #999;
+
+}
+@media(min-width:430) and (max-width:500){
+    footer{
+        display: block;
+    }
+    .img1{
+        width: 100px;
+    }
+    .img2{
+        display: block;
+    }
+}
+ 
+@media (min-width:768) and (max-width:1000){
+    footer{
+        display: flex;
+        justify-content: center;
+        margin-right: -200px;
+    }
+}
