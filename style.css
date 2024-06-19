@@ -4,76 +4,105 @@
     font-family: sans-serif;
 }
 
+/* Navbar */
 nav {
     display: flex;
+    
     align-items: center;
     width: 100%;
-    font-weight: 700;
     margin-top: 40px;
 }
 
 .logo {
+    margin-left: 100px;
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    padding-left: 20px;
 }
 
+.logo>h1{
+    padding-left: 20px;
+    font-size: 2rem;
+}
+
+.logo>img{
+    display: flex;
+}
+
+
 .link {
-    margin-left: 300px;
+    margin-left: auto;
 }
 
 .link>a {
-    margin-left: 90px;
+    margin-left: 20px;
     text-decoration: none;
+    font-size: 1.90rem;
+}
+
+/* Buttons */
+.btn {
+    margin-left: auto;
 }
 
 .btn>button {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 15px;
     border-radius: 23px;
 }
 
-.btn {
-    margin-left: 300px;
-}
-
-.btn2 {
-    background: rgba(93, 80, 198, 1);
+.btn1 {
+    color: #000;
+    background: #fff;
     border: none;
-    color: #fff;
-    font-size: 16px;
-    transition: 1s;
+    font-size: 20px;
 }
 
 .btn1 {
+    background: #fff;
+    color: #000;
+}
+
+.btn2 {
+    color: #fefefe;
+    background: #3d27cd;
     border: none;
-    background: #fff;
-    font-size: 16px;
-    transition: 1s;
+    font-size: 20px;
 }
 
-/* hover effect */
-
-.spn {
-    color: rgba(248, 94, 159, 1);
-
+.travel-btn {
+    color: #ffffff;
+    background: #3d27cd;
+    border: none;
+    border-radius: 34px;
+    padding: 18px;
+    font-size: 20px;
 }
 
-.btn2:hover {
-    background: #fff;
-    color: rgba(93, 80, 198, 1);
-    cursor: pointer;
+.travel-btn1 {
+    color: #000;
+    background: #ffffff;
+    border: none;
+    border-radius: 34px;
+    padding: 10px;
+    font-size: 20px;
 }
 
+.travel-btn1>img {
+    align-items: center;
+    margin-left: 10px;
+    padding-right: 10px;
+}
+
+/* -------------------HOVER---------------------- */
 .btn1:hover {
     background: #0c0c0c;
     color: #fff;
-    cursor: pointer;
 }
 
-/* ----------------------- */
+.btn2:hover {
+    background: #0c0c0c;
+    color: #fff;
+}
 
 .travel-btn:hover {
     background: #fff;
@@ -85,45 +114,19 @@ nav {
     color: rgba(93, 80, 198, 1);
 }
 
-/* -------------------------------------- */
-
-.spn1 {
-    align-items: center;
-    display: flex;
-    margin-left: 60px;
-    font-size: 16px;
-    color: rgba(248, 94, 159, 1);
-    margin-bottom: 40px;
-
-
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.07);
-
-    box-shadow: 0px 34px 75px 0px rgba(0, 0, 0, 0.07);
-
-    box-shadow: 0px 137px 137px 0px rgba(0, 0, 0, 0.06);
-
-    box-shadow: 0px 308px 185px 0px rgba(0, 0, 0, 0.04);
-
-    box-shadow: 0px 548px 219px 0px rgba(0, 0, 0, 0.01);
-
-    box-shadow: 0px 856px 240px 0px rgba(0, 0, 0, 0);
-
+.link>a:hover {
+    font-weight: 700;
 }
 
-.spn1>img {
-    margin-left: 10px;
-}
-
-
+/* -----------------------end--------------------------- */
+/* About section */
 .about {
-    width: 100%;
-    max-width: 23%;
-    margin-left: 100px;
-    margin-top: 180px;
+    max-width: 100%;
+    margin: 180px auto 0 20px;
 }
 
 .about>h1 {
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .about>p {
@@ -134,87 +137,103 @@ nav {
     margin-top: 30px;
 }
 
-
-.travel-btn {
-    border: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 23px;
-    cursor: pointer;
-    transition: 1s;
-    font-size: 17px;
-    background: rgba(93, 80, 198, 1);
-
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
-
-    box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.1);
-
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.09);
-
-    box-shadow: 0px 45px 27px 0px rgba(0, 0, 0, 0.05);
-
-    box-shadow: 0px 81px 32px 0px rgba(0, 0, 0, 0.01);
-
-    box-shadow: 0px 126px 35px 0px rgba(0, 0, 0, 0);
-
-}
-
-.travel-btn1 {
-    border: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 23px;
+/* heder adjust */
+.main {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    cursor: pointer;
-    font-size: 15px;
-}
+    height: calc(100vh - 60px);
+    padding: 20px;
+  }
 
-.travel-btn1>img {
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-}
-
-.pic {
-    position: relative;
+  .image-container {
     display: flex;
-    top: -490px;
-    margin-left: 800px;
-    gap: 31px;
-    padding-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -999px;
+  }
 
-}
-
-.pic3 {
-    position: absolute;
+  .image-row {
     display: flex;
-    top: 350px;
-    margin-left: 145vh;
-    gap: 31px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .image-container img {
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+.spn {
+    color: rgba(248, 94, 159, 1);
 }
 
-.picture {
-    position: absolute;
-    top: 830px;
-    right: 190px;
-}
-
-.picture1 {
-    position: absolute;
-    top: 522px;
-    right: 660px;
+.about>h1 {
+    width: 100%;
+    max-width: 30%;
 }
 
 
+.picture{
+    margin-top: -99em;
+    margin-left: 700px;
+}
 
+.picture1{
+    margin-top: -99px;
+    margin-left: 99em;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 10px;
+        /* Adjusted for smaller screens */
+    }
 
+    .link {
+        display: none;
+        /* Hide links in mobile view */
+    }
 
+    .btn {
+        display: none;
+        /* Hide buttons in mobile view */
+    }
 
-@media (min-width:300) and (max-width:490){
-   
+    .about {
+        margin-top: 100px;
+        /* Adjusted margin top */
+    }
+
+    .about>h1 {
+        font-size: 40px;
+        /* Adjusted font size */
+    }
+
+    .big {
+        display: flex;
+        gap: 30px;
+    }
+
+    .small {
+        display: grid;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        margin-top: 60px;
+        /* Further adjusted margin top */
+    }
+
+    .about>h1 {
+        font-size: 30px;
+        /* Further adjusted font size */
+    }
 }
